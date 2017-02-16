@@ -1,6 +1,7 @@
 
 angular.module('Rshots.services', [])
 
+<<<<<<< HEAD
 .factory('Images', function ($http) {
 
   var getAllImages = function (board) {
@@ -35,6 +36,8 @@ angular.module('Rshots.services', [])
     });
   };      
 
+=======
+>>>>>>> 04886e545dffe2e11953a4ceda0f24c47d7439c0
 
 .factory('Auth', function ($http, $location, $window) {
  
