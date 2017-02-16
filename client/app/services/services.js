@@ -1,6 +1,43 @@
 
 angular.module('Rshots.services', [])
 
+<<<<<<< HEAD
+.factory('Images', function ($http) {
+
+  var getAllImages = function (board) {
+    return $http({
+      method: 'GET',
+      url: '/api/images',
+    })
+    .then(function (resp) {
+      console.log(resp.data);
+      return resp.data;
+    }).catch(function(err){
+      if(err) {
+        console.log(err);
+        throw err;
+      }
+    });
+  };    
+
+  var getUserImages = function (user) {
+    return $http({
+      method: 'GET',
+      url: '/api/users/' + user
+    })
+    .then(function (resp) {
+      console.log(resp.data);
+      return resp.data;
+    }).catch(function(err){
+      if(err) {
+        console.log(err);
+        throw err;
+      }
+    });
+  };      
+
+=======
+>>>>>>> 04886e545dffe2e11953a4ceda0f24c47d7439c0
 
 .factory('Auth', function ($http, $location, $window) {
  
